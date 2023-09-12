@@ -26,10 +26,14 @@ a{
   color:var(--color-text);
 }
 .navbar-expand-lg .nav-item{
-  @media screen and (max-width:700px){
+  @media screen and (max-width:800px){
     width:100%;
     border-bottom:1px solid var(--color-gray);
-  }
+    transition:all 0.2s linear;
+  } 
+}
+.navbar-expand-lg .nav-item:hover{
+  background-color: var(--color-green);
 }
 div.d-flex select.form-select{
   width:50% !important;
