@@ -7,8 +7,9 @@
   --color-pink:#a1bba2;
   --color-yellow:#f6de9e;
   --color-red:#f6de9e;
-  --color-light-green:#f6de9e;
-  --color-gray:#f6de9e;
+  --color-light-green:#f6ecce;
+  --color-gray:#a4b0bc;
+  
 }
 .container-90{
   width:90%;
@@ -24,14 +25,53 @@ a{
   text-decoration:none;
   color:var(--color-text);
 }
+.navbar-expand-lg .nav-item{
+  @media screen and (max-width:700px){
+    width:100%;
+    border-bottom:1px solid var(--color-gray);
+  }
+}
 div.d-flex select.form-select{
   width:50% !important;
 }
 .second-section div.box__card{
   z-index:999;
   left:0;
+  bottom:30px !important;
 }
 
 span.fa-solid{
-  font-size:25px;
+  font-size:21px;
+}
+
+div.box .box_float{
+  background-color:var(--color-light-green);
+  margin:0 2rem;
+}
+
+div.box , div.box-float{
+  top: -10px;
+  z-index: 999;
+}
+
+.box_float div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_float .box_float_first{
+  background-color:var(--color-yellow) !important;
+}
+.box_float .box_float_second{
+  background-color:var(--color-light-text);
+}
+.box_float .box_float_third{
+  background-color:var(--color-green);
+}
+.box_float .box_float_fourth{
+  background-color:var(--color-gray);
+}
+div.col-lg-8 span{
+  text-align:left;
 }

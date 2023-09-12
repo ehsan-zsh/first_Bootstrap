@@ -8,9 +8,11 @@
     <!--source for style-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--source link for font-->
     <link rel="stylesheet" href="font-icon.css">
-    <link rel="stylesheet" href="font-icon/css/all.css"
+    <link rel="stylesheet" href="font-icon/css/all.css">
     <link rel="stylesheet" href="vazir-fonts/fonts/fonts.css">
+    <!--source link for swiper-->
     <link rel="stylesheet" href="swiper/css/swiper-bundle.css">
     <link rel="stylesheet" href="swiper/css/swiper-bundle.min.css">
     <!--title website-->
@@ -48,8 +50,8 @@
             </div>
         </div>
     </header>
-    <section class="py-5">
-        <div class="d-flex container row">
+    <section class="container-90 py-5">
+        <div class="d-flex row">
             <div class="col-12 col-lg-3 align-items-center">
                 <img src="photos/Untitled.jpg" class="img-fluid">
             </div>
@@ -99,7 +101,7 @@
                 <div class="col-12 col-lg-4">
                     <div class="d-flex align-items-center gap-5 pt-3">
                         <span>دویست تومان</span>
-                        <span class="fa-solid fa-cart-shopping fs-0.5"></span>
+                        <a href="#"><span class="fa-solid fa-cart-shopping fs-0.5"></span></a>
                         <a href="#"><span class="sharif-heart"></span></a>
                     </div>
                 </div>
@@ -131,7 +133,7 @@
                     <img class="img-fluid w-100" src="photos/3.jpg" alt="slide-third">
                 </div>
             </div>
-            <div class="d-none d-lg-block box__card card w-25 rounded bg-light shadow-lg text-center position-absolute bottom-0">
+            <div class="d-none d-lg-block box__card card w-25 rounded bg-light shadow-lg text-center position-absolute">
                 <div class="card-title">
                     <h5>عنوان محصول</h5>
                 </div>
@@ -158,42 +160,136 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="d-flex flex-row">
-                <div class="col-lg-3 d-flex align-items-center flex-row rounded">
-                    <div class="col-lg-2">
-                        <span class="sharif-icons8_Online_Support fs-6"></span>
+    <section class="container-90">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="box d-none d-lg-flex box-float fs-0.5 d-lg-flex flex-row flex-nowrap gap-1 position-relative">
+                <div class="box_float rounded col-lg-3 d-flex me-2 align-items-center flex-row justify-content-center rounded">
+                    <div class="col-lg-2 box_float_first p-2">
+                        <span class="text-secondary sharif-icons8_Online_Support"></span>
                     </div>
-                    <div class="col-lg-10 w-100 d-flex flex-row px-2">
-                        <h4>پشتیبانی</h4>
-                    </div>
+                    <span class="col-lg-10 w-100 d-flex flex-row p-2">
+                        <h5>پشتیبانی</h5>
+                    </span>
                 </div>
     
-                <div class="col-lg-3 d-flex align-items-center flex-row">
-                    <div class="col-lg-2">
-                        <span class="sharif-truck"></span>
+                <div class="box_float rounded col-lg-3 d-flex me-2 align-items-center flex-row justify-content-center">
+                    <div class="col-lg-2 box_float_second p-2">
+                        <span class="text-success sharif-truck"></span>
                     </div>
-                    <div class="col-lg-10 w-100 d-flex flex-row px-2">
-                        <h4>حمل و نقل</h4>
-                    </div>
+                    <span class="col-lg-10 w-100 d-flex flex-row p-2">
+                        <h5>حمل و نقل</h5>
+                    </span>
                 </div>
     
-                <div class="col-lg-3 d-flex align-items-center flex-row">
-                    <div class="col-lg-2">
-                        <span class="sharif-credit-card"></span>
+                <div class="box_float rounded col-lg-3 d-flex me-2 align-items-center flex-row justify-content-center">
+                    <div class="col-lg-2 box_float_third p-2">
+                        <span class="text-primary sharif-credit-card"></span>
                     </div>
-                    <div class="col-lg-10 w-100 d-flex flex-row px-2">
-                        <h4>پرداخت آنلاین</h4>
-                    </div>
+                    <span class="col-lg-10 w-100 d-flex flex-row p-2">
+                        <h5>پرداخت آنلاین</h5>
+                    </span>
                 </div>
     
-                <div class="col-lg-3 d-flex align-items-center flex-row">
-                    <div class="col-lg-2">
-                        <span class=" text-danger sharif-shopping-cart"></span>
+                <div class="box_float rounded col-lg-3 d-flex me-2 align-items-center flex-row justify-content-center">
+                    <div class="col-lg-2 box_float_fourth p-2">
+                        <span class="text-danger sharif-shopping-cart"></span>
                     </div>
-                    <div class="col-lg-10 w-100 d-flex flex-row px-2">
-                       <h4>سبد خرید</h4>
+                    <span class="col-lg-10 w-100 d-flex flex-row p-2">
+                       <h5>سبد خرید</h5>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-90 py-5">
+        <div class="row w-100">
+            <h4 class="text-center pb-3">
+                دسته بندی محصولات
+            </h4>
+            <div class="d-flex flex-column flex-xl-row justify-content-around gap-3 align-items-center">
+                <div class="d-flex flex-column gap-4">
+                    <div class="card">
+                        <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                            <div class="col-lg-4">
+                                <img class="img-fluid" src="photos/product-image/3-9-300x246.jpg" alt="وسایل کیک پزی">
+                            </div>
+                            <div class="col-lg-8">
+                                <h5> ابزارهای قنادی: انواع قالب </h5>
+                                <p>قالب‌های کیک و شیرینی هم از  مهم‌ترین و اساسی‌ترین ابزارهای قنادی محسوب می‌شوند.
+                                     قالب‌ها بر اساس نیاز در انواع جنس، مدل و اندازه به فروش می‌رسندستند.
+                                </p>
+                                <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                            <div class="col-lg-4">
+                                <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
+                            </div>
+                            <div class="col-lg-8">
+                                <h5>  ابزارهای قنادی: لیسک و فرچه  </h5>
+                                <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند
+                                </p>
+                                <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="card">
+                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h5> ابزارهای قنادی: لیسک و فرچه </h5>
+                                    <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
+                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h5> پایه گردان کیک </h5>
+                                    <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
+                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="card">
+                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h5> ابزارهای قنادی: لیسک و فرچه </h5>
+                                    <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
+                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h5> پایه گردان کیک </h5>
+                                    <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
+                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
