@@ -1,0 +1,37 @@
+:root{
+  --color-text:#353535;
+  --color-light-text:#bea497;
+  --color-white:#ffff;
+  --color-red-color:#8b2d3f;
+  --color-green:#a1bba2;
+  --color-pink:#a1bba2;
+  --color-yellow:#f6de9e;
+  --color-red:#f6de9e;
+  --color-light-green:#f6de9e;
+  --color-gray:#f6de9e;
+}
+.container-90{
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:var(--color-text);
+}
+
+a{
+  text-decoration:none;
+  color:var(--color-text);
+}
+div.d-flex select.form-select{
+  width:50% !important;
+}
+.second-section div.box__card{
+  z-index:999;
+  left:0;
+}
+
+span.fa-solid{
+  font-size:25px;
+}

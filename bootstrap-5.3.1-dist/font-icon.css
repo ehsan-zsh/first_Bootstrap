@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'sharif';
+  src:  url('fonts/sharif.eot?5mofdh');
+  src:  url('fonts/sharif.eot?5mofdh#iefix') format('embedded-opentype'),
+    url('fonts/sharif.ttf?5mofdh') format('truetype'),
+    url('fonts/sharif.woff?5mofdh') format('woff'),
+    url('fonts/sharif.svg?5mofdh#sharif') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="sharif-"], [class*=" sharif-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sharif' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sharif-icons8_Online_Support:before {
+  content: "\e916";
+  font-size:50px;
+}
+.sharif-clock-circle:before {
+  content: "\e900";
+  font-size:25px;
+}
+.sharif-close-circle:before {
+  content: "\e901";
+  font-size:25px;
+}
+.sharif-dollar-circle:before {
+  content: "\e902";
+  font-size:25px;
+}
+.sharif-paper-clip:before {
+  content: "\e903";
+  font-size:25px;
+}
+.sharif-phone:before {
+  content: "\e904";
+  font-size:25px;
+}
+.sharif-play-circle:before {
+  content: "\e905";
+  font-size:25px;
+}
+.sharif-right-circle:before {
+  content: "\e906";
+  font-size:25px;
+}
+.sharif-safety:before {
+  content: "\e907";
+  font-size:25px;
+}
+.sharif-search:before {
+  content: "\e90b";
+  font-size:25px;
+}
+.sharif-shopping:before {
+  content: "\e911";
+  font-size:25px;
+}
+.sharif-shopping-cart:before {
+  content: "\e908";
+  font-size:50px;
+}
+.sharif-sync:before {
+  content: "\e909";
+  font-size:25px;
+}
+.sharif-heart:before {
+  content: "\e917";
+  font-size:25px;
+}
+.sharif-telegram:before {
+  content: "\e912";
+  font-size:25px;
+}
+.sharif-whatsapp:before {
+  content: "\e913";
+  font-size:25px;
+}
+.sharif-instagram:before {
+  content: "\e914";
+  font-size:25px;
+}
+.sharif-google-plus:before {
+  content: "\e915";
+  font-size:25px;
+}
+.sharif-mobile:before {
+  content: "\e90d";
+  font-size:25px;
+}
+.sharif-credit-card:before {
+  content: "\e90e";
+  font-size:50px;
+}
+.sharif-money:before {
+  content: "\e90e";
+  font-size:25px;
+}
+.sharif-payment:before {
+  content: "\e90e";
+  font-size:25px;
+}
+.sharif-ecommerce:before {
+  content: "\e90e";
+  font-size:25px;
+}
+.sharif-location:before {
+  content: "\e90f";
+  font-size:25px;
+}
+.sharif-map:before {
+  content: "\e90f";
+  font-size:25px;
+}
+.sharif-truck:before {
+  content: "\e910";
+  font-size:50px;
+}
+.sharif-mail:before {
+  content: "\e90c";
+  font-size:25px;
+}
+.sharif-headphones:before {
+  content: "\e90a";
+  font-size:25px;
+}

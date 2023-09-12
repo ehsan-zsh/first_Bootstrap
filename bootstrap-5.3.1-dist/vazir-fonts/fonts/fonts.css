@@ -1,0 +1,13 @@
+@font-face{
+    font-family:vazirmatn;
+    src:url('fonts/Vazirmatn-Thin.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-Light.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-ExtraLight.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-Medium.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-SemiBold.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-Bold.ttf') format(ttf);
+    src:url('fonts/Vazirmatn-ExtraBold.ttf') format(ttf);
+}
+body{
+    font-family:vazirmatn;
+}
