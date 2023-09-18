@@ -11,7 +11,10 @@
   --color-gray:#a4b0bc;
   --color-border:#ece3dc;
   --color-box-hover:#ddc4a6;
+  --color-brown:#7b6154;
+  --color-yellow-light:#efddc7;
 }
+
 .container-90{
   width:90%;
   margin-right:auto;
@@ -31,6 +34,37 @@ p{
   line-height: 2rem;
 }
 
+.second-section__swiper img{
+  @media screen and (max-width:800px){
+    height:200px !important;
+  }
+}
+
+@media screen and (max-width:800px){
+section .second-section .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after{
+  content: 'prev';
+	font-size: 1rem;
+}
+section .second-section .swiper-button-next::after, .swiper-rtl .swiper-button-prev::after{
+  content: 'prev';
+	font-size: 1rem;
+}
+}
+
+@media screen and (max-width:1200px){
+  .line-row{
+    .w-40{
+      width:30% !important;
+    }
+  }
+}
+@media screen and (max-width:700px) {
+  .line-row{
+    .w-40{
+      width:13% !important;
+    }
+  }
+}
 .navbar-expand-lg .nav-item{
   @media screen and (max-width:800px){
     width:100%;
@@ -108,7 +142,7 @@ button .card-article__button :hover{
   background-color: blue !important;
 }
 
-.shadow , .shadow-lg , .border {
+.shadow , .shadow-lg , .border , .card {
   box-shadow:0px 0px 10px 1px #ece3dc !important;
 } 
 .box_hover {
@@ -149,6 +183,7 @@ button .card-article__button :hover{
 
 .adversiting figure img{
   opacity:0.5;
+  filter:blur(2px);
 }
 
 .adversiting__content__first{
@@ -156,12 +191,37 @@ button .card-article__button :hover{
 	inset: 50px;
 	border-radius: 10px;
   line-height: 2rem;
-
 }
 
+.adversiting__content__first  ,
+.adversiting__content__second  {
+  white-space: wrap;
+  overflow: hidden !important;
+  text-overflow:ellipsis;
+}
 .adversiting__content__second{
   background: #fff;
 	inset: 50px;
 	border-radius: 10px;
 	line-height: 2rem;
+}
+
+.collapse-question__header span{
+  background-color: #7b6154;
+  transform:skew(-10deg , 0);
+  overflow:hidden;
+  color:var(--color-white);
+}
+
+.collapse-question__header div{
+  background-color:var(--color-yellow-light);
+}
+
+.collapse-question__body button{
+  border-bottom:1px solid var(--color-yellow);
+  width: 100%;
+}
+
+.about-us__bg-img{
+  background-image:url("../photos/background-image/background-image.jpg");
 }

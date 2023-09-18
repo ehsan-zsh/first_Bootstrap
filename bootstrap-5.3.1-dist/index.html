@@ -33,16 +33,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupported">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <button class="nav-link d-flex align-items-center gap-2" href="#">
                                 <span class="sharif-mail pe-3 order-1"></span>
                                 <span>ali4134@gmail.com</span>
-                            </a>
+                            </button>
                             </li>
                             <li class="nav-item nav-item pe-5">
-                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <button class="nav-link d-flex align-items-center gap-2" href="#">
                                 <span class="sharif-headphones order-1"></span>
                                 <span>09154569875</span>
-                            </a>
+                            </button>
                             </li>
                         </ul>
                     </div>
@@ -123,13 +123,13 @@
     <section class="second-section">
         <div class="swiper w-100 h-50">
             <div class="swiper-wrapper col-12 position-relative">
-                <div class="swiper-slide">
+                <div class="second-section__swiper swiper-slide">
                     <img class="img-fluid w-100" src="photos/1.jpg" alt="slide-first">
                 </div>
-                <div class="swiper-slide">
+                <div class="second-section__swiper swiper-slide">
                     <img class="img-fluid w-100" src="photos/2.jpg" alt="slide-second">
                 </div>
-                <div class="swiper-slide">
+                <div class="second-section__swiper swiper-slide">
                     <img class="img-fluid w-100" src="photos/3.jpg" alt="slide-third">
                 </div>
             </div>
@@ -155,8 +155,8 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-prev btn btn-light p-4 rounded"></div>
-            <div class="swiper-button-next btn btn-light p-4 rounded"></div>
+            <div class="swiper-button-prev btn btn-light p-md-4 rounded"></div>
+            <div class="swiper-button-next btn btn-light p-md-4 rounded"></div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
@@ -203,95 +203,109 @@
     </section>
     <section class="container-90 py-5">
         <div class="row w-100">
-            <div class="d-flex flex-row align-items-center justify-content-center pb-5">
+            <div class="line-row d-flex flex-row align-items-center justify-content-center pb-5">
                 <hr class="w-40 w-100">
                 <h4 class="px-2">دسته بندی محصولات</h4>
                 <hr class="w-40 w-100">
             </div>
             <div class="d-flex flex-column flex-xl-row justify-content-around gap-3 align-items-center">
                 <div class="d-flex flex-column gap-4">
-                    <div class="card">
-                        <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="photos/product-image/3-9-300x246.jpg" alt="وسایل کیک پزی">
-                            </div>
-                            <div class="col-lg-8">
-                                <h5> ابزارهای قنادی: انواع قالب </h5>
-                                <p>قالب‌های کیک و شیرینی هم از  مهم‌ترین و اساسی‌ترین ابزارهای قنادی محسوب می‌شوند.
-                                     قالب‌ها بر اساس نیاز در انواع جنس، مدل و اندازه به فروش می‌رسندستند.
-                                </p>
-                                <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                            <div class="col-lg-4">
-                                <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
-                            </div>
-                            <div class="col-lg-8">
-                                <h5>  ابزارهای قنادی: لیسک و فرچه  </h5>
-                                <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند
-                                </p>
-                                <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="d-flex flex-column gap-4">
-                    <div class="d-flex flex-column gap-4">
+                    <a href="#" class="w-100">
                         <div class="card">
-                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
-                                </div>
-                                <div class="col-lg-8">
-                                    <h5> ابزارهای قنادی: لیسک و فرچه </h5>
-                                    <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
-                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                            <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                <div class="col-12 col-lg-4">
+                                    <img class="img-fluid w-100 rounded-2" src="photos/product-image/3-9-300x246.jpg" alt="وسایل کیک پزی">
+                                </div>         
+                                <div class="col-12 col-lg-8 pt-2 pt-lg-0">
+                                    <h5> ابزارهای قنادی: انواع قالب </h5>
+                                    <p>قالب‌های کیک و شیرینی هم از  مهم‌ترین و اساسی‌ترین ابزارهای قنادی محسوب می‌شوند.
+                                         قالب‌ها بر اساس نیاز در انواع جنس، مدل و اندازه به فروش می‌رسندستند.
+                                    </p>
+                                    <a href="#">
+                                        <span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </a>
+                    <a href="#" class="w-100">
                         <div class="card">
-                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
+                            <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                <div class="col-12 col-lg-4">
+                                    <img class="w-100 img-fluid rounded-2 img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
                                 </div>
-                                <div class="col-lg-8">
-                                    <h5> پایه گردان کیک </h5>
-                                    <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
+                                <div class="col-12 col-lg-8">
+                                    <h5>  ابزارهای قنادی: لیسک و فرچه  </h5>
+                                    <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند
+                                    </p>
                                     <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
                                 </div>
                             </div>
                         </div> 
+                    </a>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column gap-4">
+                        <a href="#" class="w-100">
+                            <div class="card">
+                                <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                    <div class="col-12 col-lg-4">
+                                        <img class="w-100 rounded-2 img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
+                                    </div>
+                                    <div class=" col-lg-8">
+                                        <h5> ابزارهای قنادی: لیسک و فرچه </h5>
+                                        <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
+                                        <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="w-100">
+                            <div class="card">
+                                <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                    <div class="col-12 col-lg-4">
+                                        <img class="w-100 rounded-2 img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <h5> پایه گردان کیک </h5>
+                                        <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
+                                        <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex flex-column gap-4">
                     <div class="d-flex flex-column gap-4">
-                        <div class="card">
-                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
-                                </div>
-                                <div class="col-lg-8">
-                                    <h5> ابزارهای قنادی: لیسک و فرچه </h5>
-                                    <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
-                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body shadow d-flex flex-row align-items-center gap-2">
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
-                                </div>
-                                <div class="col-lg-8">
-                                    <h5> پایه گردان کیک </h5>
-                                    <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
-                                    <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                        <a href="#" class="w-100">
+                            <div class="card d-flex">
+                                <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                    <div class="col-12 col-lg-4">
+                                        <img class="w-100 rounded-2 img-fluid" src="photos/product-image/4-7-300x190.jpg" alt="وسایل کیک پزی">
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <h5> ابزارهای قنادی: لیسک و فرچه </h5>
+                                        <p>به‌منظور برگرداندن کیک و شیرینی یا هم زدن مایه کیک و دیگر مواد، لیسک یک وسیله کاربردی است. لیسک‌ها دارای صفحات بزرگ و نازکی هستند</p>
+                                        <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
+                        </a>
+                        <a href="#" class="w-100">
+                            <div class="card">
+                                <div class="card-body shadow d-flex flex-column flex-lg-row align-items-center gap-2">
+                                    <div class="col-12 col-lg-4">
+                                        <img class="w-100 rounded-2 img-fluid" src="photos/product-image/5-11-300x300.jpg" alt="وسایل کیک پزی">
+                                    </div>
+                                    <div class="col-12 col-lg-8">
+                                        <h5> پایه گردان کیک </h5>
+                                        <p>یکی دیگر از ابزارهای کاربردی در کیک پزی قیف به همراه ماسوره‌های متنوع است. به کمک ماسوره می‌توان طرح‌های دلربا و متفاوتی را روی کیک ونیاز به قیف و سرپیچ ... </p>
+                                        <a href="#"><span class="fa-solid fs-1 fa-circle-arrow-left w-100 text-danger"></span></a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -317,7 +331,7 @@
     </section>
     <section class="container-90 py-5">
         <div class="row d-flex justify-content-around">
-            <div class="d-flex flex-row align-items-center justify-content-center pb-5">
+            <div class="line-row d-flex flex-row align-items-center justify-content-center pb-5">
                 <hr class="w-40 w-100">
                 <h4 class="px-2">محصولات تخفیف دار</h4>
                 <hr class="w-40 w-100">
@@ -328,14 +342,14 @@
                         <div class="p-3 h-100 justify-content-center">
                             <div class="d-lg-flex col-lg-12 flex-row h-100 justify-content-around align-items-center gap-4">
                                 <div class="col-12 col-lg-2">
-                                    <div class="d-flex flex-column gap-4">
-                                        <span class="bg-secondary text-light rounded p-2">sfas</span>
-                                        <span class="bg-secondary text-light rounded p-2">sfad</span>
-                                        <span class="bg-secondary text-light rounded p-2">adfa</span>
-                                        <span class="bg-secondary text-light rounded p-2">adf</span>
+                                    <div class="d-flex flex-row justify-content-center flex-lg-column gap-4">
+                                        <span id="z" class="bg-secondary text-light rounded p-2">sfas</span>
+                                        <span id="x" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="c" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="v" class="bg-secondary text-light rounded p-2"></span>
                                     </div>
                                 </div>
-                                <div class="col-lg-10 d-flex flex-column flex-lg-row flex-row align-items-center justify-content-between">
+                                <div class="pt-5 pt-lg-0 col-lg-10 d-flex flex-column flex-lg-row flex-row align-items-center justify-content-between">
                                     <div class="d-flex order-1 order-lg-0 col-12 col-lg-7 flex-column">
                                         <h4 class="card-title pb-2 pt-4 pt-lg-0">عنوان محصول</h4>
                                         <p class="card-text lh-lg">
@@ -353,16 +367,18 @@
                                              امید داشت که تمام و دشواری موجود 
                                         </p>
                                         <div class="d-flex flex-row justify-content-around align-items-center">
-                                            <div class="d-flex flex-row justify-content-center">
-                                                <span class="sharif-dollar-circle"></span>
-                                                <p class="text-success pe-2">20300 تومان</p>
-                                            </div>
-                                            <div class="d-flex gap-5">
-                                                <span class="sharif-shopping text-secondary"></span>
+                                            <div class="d-flex w-100 justify-content-between gap-3 flex-row">
+                                                <div class="d-flex">
+                                                    <span class="sharif-dollar-circle"></span>
+                                                    <p class="text-success pe-2">20300 تومان</p>
+                                                </div>
+                                                <div class="d-flex gap-4">
+                                                    <span class="sharif-shopping text-secondary"></span>
             
-                                                <span class="sharif-heart text-danger"></span>
-            
-                                                <span class="sharif-sync text-success"></span>
+                                                    <span class="sharif-heart text-danger"></span>
+                
+                                                    <span class="sharif-sync text-success"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -400,17 +416,35 @@
         </div>
     </section>
     <section class="container-90 card-article py-5">
-        <div class="d-flex flex-row align-items-center justify-content-center pb-5 gap-3">
-            <hr class="w-20">
-            <button class="card-article__button btn">جدید ترین محصولات</button>
-            <button class="card-article__button btn">پر فروش ترین محصولات</button>
-            <button class="card-article__button btn"> محبوب ترین محصولات </button>
-            <button class="card-article__button btn">محصولات تخفیف دار </button>
-            <hr class="w-20">
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#NavbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>              
+                <div class="collapse navbar-collapse mb-5 d-flex justify-content-lg-center" id="NavbarNav">
+                    <ul class="navbar-nav d-flex gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">جدید ترین محصولات</a>
+                        </li>
 
-        <div class="card-article__box d-flex flex-row gap-3">
-            <div class="col-lg-3 card-article__box__content position-relative">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">پرفروش ترین محصولات</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">محبوب ترین محصولات</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">محصولات تخفیف دار</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="card-article__box d-flex flex-column flex-sm-row gap-3">
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -437,7 +471,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -464,7 +500,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -491,7 +529,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -518,9 +558,11 @@
                     </p>
                 </div>
             </div>
+           </a>
         </div>
-        <div class="d-flex flex-row gap-3 mt-5">
-            <div class="col-lg-3 card-article__box__content position-relative">
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-5">
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -547,7 +589,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -574,7 +618,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -601,7 +647,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 card-article__box__content position-relative">
+           </a>
+           <a href="#" class="col-12 col-sm-6 col-md-4 col-xl-3 card-article__box__content position-relative">
+             <div class="">
                 <div class="card shadow-lg">
                     <div class="w-100 border border-bottom shadow text-center gap-2 py-3">
                         <h4 class="card-title">
@@ -628,6 +676,7 @@
                     </p>
                 </div>
             </div>
+           </a>
         </div>
     </section>
     <section class="container-90 py-5 adversiting">
@@ -664,6 +713,144 @@
             </div>
         </div>
     </section>
+    <section class="container-90 py-5 collapse-question">
+        <div class="line-row d-flex flex-row align-items-center justify-content-center pb-5">
+            <hr class="w-25 w-25">
+            <h4 class="px-2">درخواست های خرید و فروش لوازم کارکرده قنادی</h4>
+            <hr class="w-25 w-25">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="d-flex flex-column gap-0">
+                        <div class="collapse-question__header overflow-hidden card-title border w-100 d-flex">
+                            <span class="sharif-credit-card p-2"></span>
+                            <div class="w-100 text-center p-2"><h5>فروشندگان</h5></div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#first-row-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="first-row-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#third-row-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="third-row-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fourth-row-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="fourth-row-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fifth-row-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="fifth-row-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="d-flex flex-column gap-0">
+                        <div class="collapse-question__header overflow-hidden card-title border w-100 d-flex">
+                            <span class="sharif-shopping-cart p-2"></span>
+                            <div class="w-100 text-center p-2"><h5>خریداران</h5></div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#first-second-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="first-second-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#third-second-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="third-second-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse-question__body card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fourth-second-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="fourth-second-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fifth-second-collapse" aria-expanded="false">
+                                    <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
+                                </button>
+                            </p>
+                            <div class="collapse" id="fifth-second-collapse">
+                                <div class="card card-body border-2 shadow">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                     از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-90 py-5 about-us">
+        <div style="width: 250px; height:150px">
+            <div class="about-us__bg-img"></div>
+        </div>
+    </section>
     <p id="demo" class="bg-primary text-light text-center"></p>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
@@ -695,14 +882,8 @@ const swiper = new Swiper('.swiper', {
 
 </script>
 <script>
-    // let ContDownData = new Date("Jan 5, 2024 15:37:25").getTime();
-    // let ContDownData = new Date("1402/6/26 یکشنبه").getTime();
-    let e = 5
-    let y = 6
-    let i = 30
-    let x = setInterval(g, 1000)
-    function g(){
 
-    }
+    
+
 </script>
 </html>
