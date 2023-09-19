@@ -343,10 +343,10 @@
                             <div class="d-lg-flex col-lg-12 flex-row h-100 justify-content-around align-items-center gap-4">
                                 <div class="col-12 col-lg-2">
                                     <div class="d-flex flex-row justify-content-center flex-lg-column gap-4">
-                                        <span id="z" class="bg-secondary text-light rounded p-2">sfas</span>
-                                        <span id="x" class="bg-secondary text-light rounded p-2"></span>
-                                        <span id="c" class="bg-secondary text-light rounded p-2"></span>
-                                        <span id="v" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="first" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="second" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="third" class="bg-secondary text-light rounded p-2"></span>
+                                        <span id="fourth" class="bg-secondary text-light rounded p-2"></span>
                                     </div>
                                 </div>
                                 <div class="pt-5 slide-show pt-lg-0 col-lg-10 d-flex flex-column flex-lg-row flex-row align-items-center justify-content-between">
@@ -766,7 +766,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="collapse-question__body card-body">
                             <p>
                                 <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fifth-row-collapse" aria-expanded="false">
                                     <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
@@ -779,6 +779,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="w-100 text-center py-2 pb-3">
+                        <button type="button" class="btn btn-outline-brown">
+                            ثبت آگهی فروش لوازم کارکرده صنعت قنادی
+                        </button>
                     </div>
                 </div>
             </div>
@@ -828,7 +833,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="collapse-question__body card-body">
                             <p>
                                 <button class="btn" type="button" role="button" data-bs-toggle="collapse" data-bs-target="#fifth-second-collapse" aria-expanded="false">
                                     <h6 class="text-end">فروش انواع وسایل و تجهیزات کیک پزی فروش انواع وسایل و تجهیزات کیک پزی </h6>
@@ -842,12 +847,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="w-100 text-center py-2 pb-3">
+                        <button type="button" class="btn btn-outline-brown">
+                            ثبت آگهی فروش لوازم کارکرده صنعت قنادی
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="tenth-section container-90 py-5 about-us">
-        
+    <section class="tenth-section w-100 py-5 about-us">
+        <div class="position-absolute py-5">
+            <div class="container-90">
+                <div class="w-100 text-center">
+                    <h4>درباره ما</h4>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-12 col-lg-8 tenth-section__box--right">
+                        <h5>عنوان سایت اینجا قرار میگیرد</h5>
+                        <p class="me-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 card position-relative tenth-section__box--left">
+                        <p class="w-100 text-center text-light py-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است 
+                        </p>
+                        <span class="w-100 text-center">
+                            <input type="text" class="form-control w-75 btn text-light border-light" placeholder="ایمیل خود را وارد کنید">
+                        </span>
+                        <button type="submit" class="btn mx-auto my-4 w-50 rounded-2 btn-outline-light">
+                            ارسال
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="eleventh-section py-5 container-90">
+        <div class="line-row d-flex flex-row align-items-center justify-content-center pb-5">
+            <hr class="w-40 w-100">
+            <h4 class="px-2">دسته بندی محصولات</h4>
+            <hr class="w-40 w-100">
+        </div>
     </section>
     <p id="demo" class="bg-primary text-light text-center"></p>
 </body>
@@ -881,7 +928,53 @@ const swiper = new Swiper('.swiper', {
 </script>
 <script>
 
+let days = 5;
+let hours = 2;
+let minutes = 35;
+let seconds = 6;
 
+let day = document.querySelector('#first');
+
+let hour = document.querySelector('#second');
+
+let min = document.querySelector('#third');
+
+let sec = document.querySelector('#fourth');
+
+const MyInterval = setInterval(Mytimer , 1000);
+
+function Mytimer(){
+
+    if (seconds > 0) {
+          seconds--;
+      } else {
+          seconds = 59;
+          if (minutes > 0) {
+              minutes--;
+          } else {
+              minutes = 59;
+              if (hours > 0) {
+                  hours--;
+              } else {
+                  hours = 23;
+                  if (days > 0) {
+                      days--;
+                  }
+              }
+          }
+      }
+
+      if(seconds === 0 && minutes === 0 &&  hours === 0 &&  days === 0){
+        clearInterval(MyInterval);
+      }
+
+      sec.innerHTML = seconds +" <br> " +"ثانیه";
+      min.innerHTML = minutes + "<br>" + "دقیقه";
+      hour.innerHTML = hours + "<br>" + "ساعت";
+      day.innerHTML = days + "<br>" + "روز";
+  }
+
+    seconds--;
 
 </script>
 </html>

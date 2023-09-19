@@ -11,9 +11,11 @@
   --color-gray:#a4b0bc;
   --color-border:#ece3dc;
   --color-box-hover:#ddc4a6;
-  --color-brown:#7b6154;
+  --color-brown-light:#7b6154;
+  --color-brown: #54391e;
   --color-yellow-light:#efddc7;
-  --color-purple : #c09fca
+  --color-purple : #c09fca;
+  --color-light:#eedec5;
 }
 
 .container-90{
@@ -24,6 +26,12 @@
 
 h1,h2,h3,h4,h5,h6{
   color:var(--color-text);
+}
+
+@media screen and (max-width:800px){
+  h1,h2,h3,h4,h5,h6{
+    line-height: 2rem;
+  }
 }
 
 a{
@@ -220,6 +228,33 @@ button .card-article__button :hover{
   width: 100%;
 }
 
-section.about-us{
-  background-image:url("../photos/background-image/background-image.jpg");
+.btn-outline-brown{
+  background-color:var(--color-light);
+  color:var(--color-brown-light);
+  transition:all 0.2s linear;
 }
+
+.btn-outline-brown:hover{
+  background-color:var(--color-light);
+  color:var(--color-brown-light);
+  transform:translateY(-2px);
+}
+
+.tenth-section div{
+  background-image:url("../photos/background-image/background-image.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.tenth-section__box--left{
+  width:25%;
+  background:var(--color-brown-light) !important;
+  border-radius:15px;
+}
+
+.tenth-section__box--left{
+  @media screen and (max-width:768px){
+    width:100%;
+  }
+}
+
