@@ -13,6 +13,7 @@
   --color-box-hover:#ddc4a6;
   --color-brown:#7b6154;
   --color-yellow-light:#efddc7;
+  --color-purple : #c09fca
 }
 
 .container-90{
@@ -63,6 +64,12 @@ section .second-section .swiper-button-next::after, .swiper-rtl .swiper-button-p
     .w-40{
       width:13% !important;
     }
+  }
+}
+
+.slide-show__figure img{
+  @media screen and (min-width:800px){
+    height:200px !important;
   }
 }
 .navbar-expand-lg .nav-item{
@@ -145,18 +152,9 @@ button .card-article__button :hover{
 .shadow , .shadow-lg , .border , .card {
   box-shadow:0px 0px 10px 1px #ece3dc !important;
 } 
-.box_hover {
-	inset: 0;
-	z-index: 10;
-	background: #ddc4a6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: justify;
-	text-align-last: center;
-	padding: 1.5rem;
-	color: #FFF;
-  top: 100%;
+
+.card-article__box__buttons button:nth-child(1){
+  color:var(--color-purple);
 }
 
 .card-article__box__content__first{
@@ -222,6 +220,6 @@ button .card-article__button :hover{
   width: 100%;
 }
 
-.about-us__bg-img{
+section.about-us{
   background-image:url("../photos/background-image/background-image.jpg");
 }
