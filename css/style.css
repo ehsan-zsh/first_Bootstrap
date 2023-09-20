@@ -258,3 +258,19 @@ button .card-article__button :hover{
   }
 }
 
+.eleventh-section .swiper-slide{
+  height: auto !important;
+}
+
+.thirteenth-section__box__left__badge span{
+  font-size:70px
+}
+
+.thirteenth-section__box__left__badge a{
+  padding:10px;
+}
+
+.thirteenth-section__box__left__badge button:nth-child(odd){
+  background-color: var(--color-yellow);
+  border-radius:15px;
+}

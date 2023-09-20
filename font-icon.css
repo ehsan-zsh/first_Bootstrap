@@ -83,15 +83,15 @@
 }
 .sharif-telegram:before {
   content: "\e912";
-  font-size:25px;
+  font-size:40px;
 }
 .sharif-whatsapp:before {
   content: "\e913";
-  font-size:25px;
+  font-size:40px;
 }
 .sharif-instagram:before {
   content: "\e914";
-  font-size:25px;
+  font-size:40px;
 }
 .sharif-google-plus:before {
   content: "\e915";
