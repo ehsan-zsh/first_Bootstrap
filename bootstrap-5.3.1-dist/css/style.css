@@ -78,7 +78,8 @@ section .second-section .swiper-button-next::after, .swiper-rtl .swiper-button-p
 .slide-show__figure img{
   @media screen and (min-width:800px){
     height:200px !important;
-  }
+  };
+  box-sizing: content-box;
 }
 .navbar-expand-lg .nav-item{
   @media screen and (max-width:800px){
@@ -179,9 +180,11 @@ button .card-article__button :hover{
 	z-index: 9999;
 	opacity: 0.5;
   transition:all 0.4s linear;
+  display:none;
 }
 
 .card-article__box__content:hover .card-article__box__content__first{
+  display:block;
   position: absolute;
   top:0;
   opacity:0.8;
@@ -229,7 +232,7 @@ button .card-article__button :hover{
 }
 
 .btn-outline-brown{
-  background-color:var(--color-light);
+  border: 1px solid var(--color-light);
   color:var(--color-brown-light);
   transition:all 0.2s linear;
 }
